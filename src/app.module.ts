@@ -8,7 +8,7 @@ import ConfigService from './config/config.service'
   imports: [
     MongooseModule.forRoot(ConfigService.get('MONGO_URL')), 
     BookModule,
-   ConfigModule],
+    ConfigModule],
   controllers: [],
   providers: [],
 })

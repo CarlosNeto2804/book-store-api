@@ -15,13 +15,4 @@ export class Book extends Document {
   @Prop({ default: true, required: true })
   active: boolean;
 }
-
-export interface BookInterface {
-  _id?: string;
-  name: string;
-  author: string;
-  publication_date: string;
-  active: boolean;
-}
-
 export const BookSchema = SchemaFactory.createForClass(Book);
